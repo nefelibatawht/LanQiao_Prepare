@@ -1,6 +1,6 @@
-//����һ��Ӣ�Ҫ�����д���򣬽��������е��ʵ�˳��ߵ������
-//�����������һ��������������һ���ڸ����ܳ��Ȳ����� 80 ���ַ������ַ��������ɵ��ʺ����ɿո���ɣ����е�������Ӣ����ĸ����Сд�����֣���ɵ��ַ���������֮���� 1 ���ո�ֿ������뱣֤����ĩβû�ж���Ŀո�
-//���㷨�ʼǡ�3.6   �ַ�������
+//给定一句英语，要求你编写程序，将句中所有单词的顺序颠倒输出。
+//测试输入包含一个测试用例，在一行内给出总长度不超过 80 的字符串。字符串由若干单词和若干空格组成，其中单词是由英文字母（大小写有区分）组成的字符串，单词之间用 1 个空格分开，输入保证句子末尾没有多余的空格。
+//《算法笔记》3.6   字符串处理
 #include <bits/stdc++.h>
 #include <iostream>
 #include <cstring>
@@ -8,12 +8,12 @@ using namespace std;
 const int MAX = 90;
 int main(void)
 {
-    char str[MAX]; //���޶����ַ����ȶ�һЩ
+    char str[MAX]; //比限定的字符长度多一些
     //fgets(str, MAX, stdin);
     //gets_s(str, MAX);
     cin.getline(str, MAX);
     int len = strlen(str);
-    char array[MAX][MAX];
+    char array[MAX][MAX]; //分别储存单词和单词的每个字母
     int r = 0;
     int h = 0;
     for (int i = 0; i < len; i++)
@@ -39,3 +39,5 @@ int main(void)
     }
     return 0;
 }
+
+//选择排序伪代码

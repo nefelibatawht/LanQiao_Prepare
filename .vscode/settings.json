@@ -5,6 +5,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cstring": "cpp"
     }
 }
